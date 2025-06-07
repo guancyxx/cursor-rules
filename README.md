@@ -16,38 +16,42 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 
 [Cursor Rules 最佳实践总结](https://mp.weixin.qq.com/s/-J_LwfwH9rmFy4dzEy0RXg)
 
-
 ## 当前支持的规则类型
 
 ### 通用规则
-- **一般性编程规则**
-- **Git相关规则**
-- **Git Flow工作流规则**
-- **文档编写规则**
+- **一般性编程规则** (general.mdc)
+- **Git相关规则** (git.mdc)
+- **Git Flow工作流规则** (gitflow.mdc)
+- **文档编写规则** (document.mdc)
 
 ### 编程语言
-- **Python**
-- **Java**
-- **TypeScript**
-- **Swift**
-- **Go**
-- **C++**
+- **Python** (python.mdc)
+- **Java** (java.mdc)
+- **TypeScript** (typescript.mdc)
+- **Go** (golang.mdc)
+- **C++** (c++.mdc)
+- **CSS** (css.mdc)
+- **WXML** (wxml.mdc) - 微信小程序标记语言
+- **WXSS** (wxss.mdc) - 微信小程序样式表
 
-### Web框架
-- **React**
-- **Vue.js**
-- **Next.js**
-- **Tailwind CSS**
+### 框架支持
 
-### 后端框架
-- **Django**
-- **Flask**
-- **FastAPI**
-- **Spring**
+#### 前端框架
+- **React** (react.mdc) - React 应用开发
+- **Vue.js** (vuejs.mdc) - Vue.js 应用开发
+- **Next.js** (nextjs.mdc) - React 全栈框架
+- **Tailwind CSS** (tailwind.mdc) - 实用优先的 CSS 框架
 
-### 移动开发框架
-- **Flutter**
-- **SwiftUI**
+#### 后端框架
+- **Django** (django.mdc) - Python Web 框架
+- **Flask** (flask.mdc) - Python 轻量级 Web 框架
+- **FastAPI** (fastapi.mdc) - Python 现代 API 框架
+- **Spring Boot** (springboot.mdc) - Java 企业级框架
+
+#### 移动开发框架
+- **Flutter** (flutter.mdc) - 跨平台移动应用开发
+- **SwiftUI** (swiftui.mdc) - iOS 原生 UI 框架
+- **React Native** (react-native.mdc) - 跨平台移动应用开发
 
 ## 功能特点
 
@@ -55,6 +59,8 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 - 对规则文件进行分类和整理
 - 提供标准化的规则模板
 - 便于在不同项目间共享和复用规则
+- 支持多种编程语言和框架
+- 包含备份和历史版本管理
 
 ## 使用方法
 
@@ -76,24 +82,42 @@ cursor-rules/
 │   ├── python.mdc       # Python语言规则
 │   ├── java.mdc         # Java语言规则
 │   ├── typescript.mdc   # TypeScript语言规则
-│   ├── swift.mdc        # Swift语言规则
-│   └── go.mdc          # Go语言规则
+│   ├── golang.mdc       # Go语言规则
+│   ├── c++.mdc          # C++语言规则
+│   ├── css.mdc          # CSS样式规则
+│   ├── wxml.mdc         # 微信小程序标记语言规则
+│   └── wxss.mdc         # 微信小程序样式表规则
 ├── frameworks/          # 框架相关规则
-│   ├── django.mdc       # Django框架规则
-│   ├── flask.mdc        # Flask框架规则
-│   ├── fastapi.mdc      # FastAPI框架规则
-│   ├── spring.mdc       # Spring框架规则
+│   ├── # 前端框架
 │   ├── react.mdc        # React框架规则
 │   ├── vuejs.mdc        # Vue.js框架规则
 │   ├── nextjs.mdc       # Next.js框架规则
+│   ├── # 后端框架
+│   ├── django.mdc       # Django框架规则
+│   ├── flask.mdc        # Flask框架规则
+│   ├── fastapi.mdc      # FastAPI框架规则
+│   ├── springboot.mdc   # Spring Boot框架规则
+│   ├── # 移动开发框架
 │   ├── flutter.mdc      # Flutter框架规则
 │   ├── swiftui.mdc      # SwiftUI框架规则
+│   ├── react-native.mdc # React Native框架规则
+│   └── # 样式框架
 │   └── tailwind.mdc     # Tailwind CSS规则
+└── backup/              # 备份文件夹
+    ├── python/          # Python相关备份
+    └── vue/             # Vue相关备份
 ```
 
 ## 贡献指南
 
 欢迎提交Pull Request来分享您的Cursor规则。请确保您的规则文件遵循项目的命名约定和结构。规则可以使用Markdown(.mdc)或JSON格式。
+
+### 贡献步骤
+1. Fork 本仓库
+2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
 
 ## 许可证
 
