@@ -16,6 +16,9 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 
 [Cursor Rules 最佳实践总结](https://mp.weixin.qq.com/s/-J_LwfwH9rmFy4dzEy0RXg)
 
+参考视频教程：
+https://www.bilibili.com/video/BV1S3VhzpEqL/
+
 ## 当前支持的规则类型
 
 ### 通用规则
