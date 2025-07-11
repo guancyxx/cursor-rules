@@ -67,8 +67,7 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **React Native** (react-native.mdc) - 跨平台移动应用开发
 - **Android**(android.mdc) - Android 框架开发规范
 
-
-##  4、其他工具层（可选，非必需）
+###  4、其他工具层（可选，非必需）
 需要用户明确请求的工具和流程规范，使用 `@` 引入对应的规则。
 
 - **Git相关规则** (git.mdc)
