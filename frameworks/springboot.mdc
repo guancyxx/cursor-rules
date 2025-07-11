@@ -1,8 +1,9 @@
 ---
-description:
-globs:
+description: Spring Boot 3 企业级最佳实践规范
+globs: **/*.java
 alwaysApply: false
 ---
+
 # Spring Boot 3 企业级最佳实践规范
 
 ## 1. 配置管理模块

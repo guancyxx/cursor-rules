@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: 微信小程序 WXML 编写规范
+globs: **/*.wxml
 alwaysApply: false
 ---
 # WXML 编写规范

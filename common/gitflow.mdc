@@ -1,10 +1,10 @@
 ---
-description: 
-globs: 
+description: Gitflow 工作流规则
+globs:
 alwaysApply: false
 ---
 
-# Gitflow工作流规则
+# Gitflow 工作流规则
 
 ## 主分支
 
@@ -111,4 +111,4 @@ alwaysApply: false
 5. 合并到main后：
    - 标记发布
    - 合并回develop
-   - 删除hotfix分支 
+   - 删除hotfix分支

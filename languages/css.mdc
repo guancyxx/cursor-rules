@@ -1,9 +1,4 @@
 ---
-description:
-globs:
-alwaysApply: false
----
----
 description: CSS 和样式规范
 globs: *.css, *.scss, *.less, *.styled.ts
 alwaysApply: false

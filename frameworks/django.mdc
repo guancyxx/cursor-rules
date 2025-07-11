@@ -1,10 +1,5 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
-description: 该规则解释了 Django 后端开发的约定和最佳实践。
+description: Django 后端开发的约定和最佳实践。
 globs: **/*.py
 alwaysApply: false
 ---
@@ -40,4 +35,4 @@ class ActiveUserManager(models.Manager):
 ```
 
 - 使用 Django 内置的身份验证系统
-- 在环境变量中存储设置并通过 `settings.py` 访问 
+- 在环境变量中存储设置并通过 `settings.py` 访问

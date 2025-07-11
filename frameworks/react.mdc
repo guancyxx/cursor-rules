@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: 该规则解释了 React 组件模式、hooks 使用方法和最佳实践。
 globs: **/*.jsx,**/*.tsx
 alwaysApply: false

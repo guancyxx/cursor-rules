@@ -1,10 +1,5 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
-description: 该规则解释了 Flask 轻量级 Python Web 应用程序的约定和最佳实践。
+description: Flask 轻量级 Python Web 应用程序的约定和最佳实践。
 globs: **/*.py
 alwaysApply: false
 ---
@@ -18,4 +13,4 @@ alwaysApply: false
 - 在环境变量中存储配置
 - 使用 Flask-Migrate 进行数据库迁移
 - 使用错误处理器实现适当的错误处理
-- 使用 Flask-RESTful 或类似工具构建 API 
+- 使用 Flask-RESTful 或类似工具构建 API

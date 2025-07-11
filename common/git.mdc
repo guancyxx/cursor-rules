@@ -1,8 +1,9 @@
 ---
 description: 辅助生成 git 提交信息
-globs: 
+globs:
 alwaysApply: false
 ---
+
 # Git 规则
 
 ## 重要原则

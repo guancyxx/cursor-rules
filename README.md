@@ -17,6 +17,7 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 [Cursor Rules 最佳实践总结](https://mp.weixin.qq.com/s/-J_LwfwH9rmFy4dzEy0RXg)
 
 参考视频教程：
+
 https://www.bilibili.com/video/BV1S3VhzpEqL/
 
 ## 当前支持的规则类型
@@ -36,6 +37,7 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **CSS** (css.mdc)
 - **WXML** (wxml.mdc) - 微信小程序标记语言
 - **WXSS** (wxss.mdc) - 微信小程序样式表
+- **Kotlin** (kotlin.mdc)
 
 ### 框架支持
 
@@ -55,6 +57,7 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **Flutter** (flutter.mdc) - 跨平台移动应用开发
 - **SwiftUI** (swiftui.mdc) - iOS 原生 UI 框架
 - **React Native** (react-native.mdc) - 跨平台移动应用开发
+- **Android**(android.mdc) - Android 框架开发规范
 
 ## 功能特点
 

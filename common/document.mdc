@@ -1,8 +1,9 @@
 ---
-description: 
+description: markdown 文件编写规则
 globs: *.md
 alwaysApply: false
 ---
+
 # 文档规范
 
 ## 通用要求

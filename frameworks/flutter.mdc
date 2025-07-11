@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: 该规则解释了 Flutter 小部件模式和跨平台移动开发的最佳实践。
 globs: **/*.dart
 alwaysApply: false
@@ -22,11 +17,11 @@ class Counter extends StatefulWidget {
 
 class _CounterState extends State<Counter> {
   int _count = 0;
-  
+
   void _increment() {
     setState(() { _count++; });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -43,4 +38,4 @@ class _CounterState extends State<Counter> {
 - 使用适当的文件夹结构组织代码（models、screens、widgets、services）。
 - 使用命名路由和 Navigator.pushNamed() 进行导航。
 - 使用 async/await 处理异步操作，并进行适当的错误处理。
-- 使用主题（themes）在整个应用中保持一致的样式。 
+- 使用主题（themes）在整个应用中保持一致的样式。

@@ -1,9 +1,4 @@
 ---
-description: 
-globs: 
-alwaysApply: false
----
----
 description: 该规则解释了 Tailwind CSS 约定、实用工具类和现代 UI 开发的最佳实践。
 globs: **/*.css
 alwaysApply: false
@@ -52,4 +47,4 @@ alwaysApply: false
   <div>项目 1</div>
   <div>项目 2</div>
 </div>
-``` 
+```

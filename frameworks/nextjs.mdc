@@ -1,9 +1,4 @@
 ---
-description:
-globs:
-alwaysApply: false
----
----
 description: 该规则解释了 Next.js 全栈开发的约定和最佳实践。
 globs: **/*.js,**/*.jsx,**/*.ts,**/*.tsx
 alwaysApply: false

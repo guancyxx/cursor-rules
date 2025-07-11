@@ -1,6 +1,6 @@
 ---
-description:
-globs:
+description: 微信小程序 WXSS 编写规范
+globs: **/*.wxss
 alwaysApply: false
 ---
 # WXSS 编写规范
