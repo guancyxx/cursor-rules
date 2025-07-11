@@ -20,7 +20,7 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 
 https://www.bilibili.com/video/BV1S3VhzpEqL/
 
-## 当前支持的规则类型
+## Cursor Rules 最佳实践
 
 ### 1、通用规则层
 
@@ -95,39 +95,45 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 
 ```
 cursor-rules/
-├── common/              # 通用规则
-│   ├── general.mdc      # 一般性编程规则
-│   ├── git.mdc          # Git相关规则
-│   ├── gitflow.mdc      # Git Flow工作流规则
-│   └── document.mdc     # 文档编写规则
-├── languages/           # 编程语言特定规则
-│   ├── python.mdc       # Python语言规则
-│   ├── java.mdc         # Java语言规则
-│   ├── typescript.mdc   # TypeScript语言规则
-│   ├── golang.mdc       # Go语言规则
-│   ├── c++.mdc          # C++语言规则
-│   ├── css.mdc          # CSS样式规则
-│   ├── wxml.mdc         # 微信小程序标记语言规则
-│   └── wxss.mdc         # 微信小程序样式表规则
-├── frameworks/          # 框架相关规则
+├── base/                    # 基础规则层（通用规则）
+│   ├── core.mdc             # 核心开发原则和响应语言
+│   ├── tech-stack.mdc       # 技术栈定义和官方文档链接
+│   ├── project-structure.mdc # 项目结构和文件组织规范
+│   └── general.mdc          # 通用编程规则
+├── languages/               # 编程语言特定规则
+│   ├── c++.mdc              # C++语言规则
+│   ├── css.mdc              # CSS样式规则
+│   ├── golang.mdc           # Go语言规则
+│   ├── java.mdc             # Java语言规则
+│   ├── kotlin.mdc           # Kotlin语言规则
+│   ├── python.mdc           # Python语言规则
+│   ├── typescript.mdc       # TypeScript语言规则
+│   ├── wxml.mdc             # 微信小程序标记语言规则
+│   └── wxss.mdc             # 微信小程序样式表规则
+├── frameworks/              # 框架相关规则
 │   ├── # 前端框架
-│   ├── react.mdc        # React框架规则
-│   ├── vuejs.mdc        # Vue.js框架规则
-│   ├── nextjs.mdc       # Next.js框架规则
+│   ├── nextjs.mdc           # Next.js框架规则
+│   ├── react.mdc            # React框架规则
+│   ├── react-native.mdc     # React Native框架规则
+│   ├── vuejs.mdc            # Vue.js框架规则
+│   ├── tailwind.mdc         # Tailwind CSS规则
 │   ├── # 后端框架
-│   ├── django.mdc       # Django框架规则
-│   ├── flask.mdc        # Flask框架规则
-│   ├── fastapi.mdc      # FastAPI框架规则
-│   ├── springboot.mdc   # Spring Boot框架规则
+│   ├── django.mdc           # Django框架规则
+│   ├── fastapi.mdc          # FastAPI框架规则
+│   ├── flask.mdc            # Flask框架规则
+│   ├── springboot.mdc       # Spring Boot框架规则
 │   ├── # 移动开发框架
-│   ├── flutter.mdc      # Flutter框架规则
-│   ├── swiftui.mdc      # SwiftUI框架规则
-│   ├── react-native.mdc # React Native框架规则
-│   └── # 样式框架
-│   └── tailwind.mdc     # Tailwind CSS规则
-└── backup/              # 备份文件夹
-    ├── python/          # Python相关备份
-    └── vue/             # Vue相关备份
+│   ├── android.mdc          # Android框架规则
+│   ├── android_bak.mdc      # Android框架规则（备份版本）
+│   ├── flutter.mdc          # Flutter框架规则
+│   └── swiftui.mdc          # SwiftUI框架规则
+├── other/                   # 其他工具层规则
+│   ├── document.mdc         # 文档编写规则
+│   ├── git.mdc              # Git相关规则
+│   └── gitflow.mdc          # Git Flow工作流规则
+└── demo/                    # 示例配置
+    ├── python/              # Python项目示例配置
+    └── vue/                 # Vue项目示例配置
 ```
 
 ## 贡献指南
