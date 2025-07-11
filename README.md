@@ -1,12 +1,10 @@
-# Cursor Rules 整理工具
+# Cursor Rules 规则汇总
 
-这个项目用于整理和收集来自不同项目的Cursor规则文件，提供多种编程语言和框架的规则支持。
+本项目用于收集、整理和标准化 Cursor Rules 规则文件，提供多种编程语言和框架的规则支持，使开发者能够更有效地利用 Cursor 进行开发工作。
 
-## 项目简介
+## Cursor Rules 最佳实践
 
-Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。本项目的目标是收集、整理和标准化这些规则文件，使开发者能够更有效地利用Cursor进行开发工作。
-
-参考文章教程：
+文章教程：
 
 [Cursor Rules 的一次全面总结，希望能够帮助到你！](https://mp.weixin.qq.com/s/l8r2lJlEv5fKWJRSsSd1kQ)
 
@@ -16,11 +14,10 @@ Cursor是一款AI辅助编程工具，它使用规则文件来指导其行为。
 
 [Cursor Rules 最佳实践总结](https://mp.weixin.qq.com/s/-J_LwfwH9rmFy4dzEy0RXg)
 
-参考视频教程：
+视频教程：
 
 https://www.bilibili.com/video/BV1S3VhzpEqL/
 
-## Cursor Rules 最佳实践
 
 ### 1、通用规则层
 
@@ -74,15 +71,6 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **Git Flow工作流规则** (gitflow.mdc)
 - **文档编写规则** (document.mdc)
 
-
-## 功能特点
-
-- 收集不同项目中的Cursor规则文件
-- 对规则文件进行分类和整理
-- 提供标准化的规则模板
-- 便于在不同项目间共享和复用规则
-- 支持多种编程语言和框架
-- 包含备份和历史版本管理
 
 ## 使用方法
 
@@ -138,14 +126,7 @@ cursor-rules/
 
 ## 贡献指南
 
-欢迎提交Pull Request来分享您的Cursor规则。请确保您的规则文件遵循项目的命名约定和结构。规则可以使用Markdown(.mdc)或JSON格式。
-
-### 贡献步骤
-1. Fork 本仓库
-2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 打开一个 Pull Request
+欢迎提交Pull Request 或者提交 Issue 来分享您的Cursor规则。请确保您的规则文件遵循项目的命名约定和结构。规则可以使用Markdown(.mdc)或JSON格式。
 
 ## 许可证
 
