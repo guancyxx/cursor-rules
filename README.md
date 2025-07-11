@@ -22,13 +22,19 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 
 ## 当前支持的规则类型
 
-### 通用规则
-- **一般性编程规则** (general.mdc)
-- **Git相关规则** (git.mdc)
-- **Git Flow工作流规则** (gitflow.mdc)
-- **文档编写规则** (document.mdc)
+### 1、通用规则层
 
-### 编程语言
+这些规则始终生效，为所有代码提供基础规范：
+
+- **core.mdc** - 核心开发原则和响应语言
+- **teck-stack.mdc** - 技术栈定义和官方文档链接
+- **project-structure.mdc** - 项目结构和文件组织规范
+- **general.mdc** - 通用编程规则（后续将移除）
+
+### 2、编程语言层
+
+根据文件扩展名自动应用的语言特定规范：
+
 - **Python** (python.mdc)
 - **Java** (java.mdc)
 - **TypeScript** (typescript.mdc)
@@ -39,7 +45,9 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **WXSS** (wxss.mdc) - 微信小程序样式表
 - **Kotlin** (kotlin.mdc)
 
-### 框架支持
+### 3、框架层
+
+根据文件扩展名自动应用规范，或者AI可根据上下文自动判断并请求的框架特定规范：
 
 #### 前端框架
 - **React** (react.mdc) - React 应用开发
@@ -58,6 +66,15 @@ https://www.bilibili.com/video/BV1S3VhzpEqL/
 - **SwiftUI** (swiftui.mdc) - iOS 原生 UI 框架
 - **React Native** (react-native.mdc) - 跨平台移动应用开发
 - **Android**(android.mdc) - Android 框架开发规范
+
+
+##  4、其他工具层（可选，非必需）
+需要用户明确请求的工具和流程规范，使用 `@` 引入对应的规则。
+
+- **Git相关规则** (git.mdc)
+- **Git Flow工作流规则** (gitflow.mdc)
+- **文档编写规则** (document.mdc)
+
 
 ## 功能特点
 
