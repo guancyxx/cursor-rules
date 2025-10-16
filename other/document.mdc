@@ -1,7 +1,7 @@
 ---
 description: markdown 文件编写规则
 globs: *.md
-alwaysApply: false
+alwaysApply: true
 ---
 
 # 文档规范
@@ -38,6 +38,7 @@ alwaysApply: false
 - 相关内容应当放在一起
 - 使用小标题和列表增强可读性
 - 避免过长段落，保持内容简洁
+- 如涉及功能流程，则使用mermaid工具画出流程图
 
 ## 代码示例规范
 - 提供完整可运行的示例
