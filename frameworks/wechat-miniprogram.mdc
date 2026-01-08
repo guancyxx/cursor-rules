@@ -1,0 +1,146 @@
+---
+description: WeChat Mini Program development rules and best practices with TypeScript, TDesign, and Pinia. Enforces Single Responsibility Principle and Domain-Driven Design.
+globs: 
+  - "**/*.ts"
+  - "**/*.wxml"
+  - "**/*.wxss"
+  - "**/*.json"
+alwaysApply: false
+---
+
+# WeChat Mini Program Rules
+
+## Core Principles
+
+### Single Responsibility Principle (SRP)
+
+- Each file must have only one responsibility
+- Files with multiple responsibilities must be split into multiple files
+- Page files: UI rendering and lifecycle only, business logic in separate service files
+- Component files: UI rendering only, business logic in separate service files
+- Service files: Each service file handles one domain's business logic
+- Store files: Each store file manages one domain's state
+- API Service files: Each API service file handles one domain's API calls
+- Type files: Each type file defines one domain's types
+- Utility files: Each utility file provides one utility function
+
+### Domain-Driven Design (DDD)
+
+- Organize code by business domains, each domain in independent directory
+- Strict domain isolation, no cross-domain mixing
+- Directory structure organized by domain: pages, components, services, stores, types
+- Domain examples: user, order, product, payment
+- Cross-domain interaction through service layer only, no direct access to other domains' internals
+
+## Project Structure
+
+- Organize by domain: pages/[domain], components/[domain], services/[domain], stores/[domain], types/[domain]
+- Use kebab-case for directories and files
+- Page structure: page.ts (UI and lifecycle), page-service.ts (business logic), page.wxml, page.wxss, page.json
+- Component structure: component.ts (UI), component-service.ts (business logic), component.wxml, component.wxss, component.json
+- Shared components in components/shared directory
+- Common utilities in utils directory
+
+## TypeScript
+
+- Use interfaces over type aliases for object definitions
+- Use Page and Component types for pages and components
+- Define complete request/response types for APIs
+- Leverage TypeScript built-in utility types
+- Enable strict mode type checking
+- Define types in separate files per domain
+
+Reference: [types-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/types-template.ts)
+
+## Page Development
+
+- Page files handle UI rendering and lifecycle only
+- Business logic in separate service files
+- Pages organized by business domain
+- Cross-domain logic through service calls
+- Lifecycle hooks: onLoad, onShow, onReady, onUnload
+- Initialize data in onLoad by calling service methods
+- All business logic in service files, pages only call service methods
+- Page navigation: use wx.navigateTo, wx.redirectTo (encapsulated in navigation service)
+- Type-safe page parameters (types in separate files)
+- Configure page properties in page.json
+
+Reference: [page-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/page-template.ts)
+
+Reference: [page-service-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/page-service-template.ts)
+
+## Component Development
+
+- Component files handle UI rendering only
+- Business logic in separate service files
+- Components organized by business domain, shared components in shared directory
+- Register components using Component constructor
+- Type-safe props definition (types in separate files)
+- Event communication using triggerEvent
+- All business logic in service files, components only call service methods
+- Component lifecycle: attached, ready, detached
+- Use styleIsolation option for style isolation
+
+Reference: [component-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/component-template.ts)
+
+Reference: [component-service-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/component-service-template.ts)
+
+## API Calls
+
+- Each domain has independent service file, no cross-domain mixing
+- Each service file handles one domain's API calls only
+- Organize API calls by domain in services directory
+- Request interception: handle token, errors (separate interceptor file)
+- Response handling: unified response data format (separate response handler file)
+- Error handling: network errors, business errors (separate error handler file)
+- Type-safe API requests and responses (types in separate files)
+
+Reference: [api-service-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/api-service-template.ts)
+
+Reference: [api-interceptor-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/api-interceptor-template.ts)
+
+Reference: [api-response-handler-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/api-response-handler-template.ts)
+
+Reference: [api-error-handler-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/api-error-handler-template.ts)
+
+## Pinia State Management
+
+- Each domain has independent store file, no cross-domain state mixing
+- Each store manages one domain's state only
+- Define stores using defineStore
+- Organize stores by business domain (e.g., userStore, orderStore)
+- Type-safe state definition (types in separate files)
+- Actions: async operations and business logic (each action has single responsibility)
+- Getters: computed properties (each getter has single responsibility)
+- Use stores in pages and components
+
+Reference: [store-template.ts](.cursor/rules/frameworks/wechat-miniprogram/templates/store-template.ts)
+
+## TDesign Component Library
+
+- Import components on demand
+- Customize theme through CSS variables
+- Use TypeScript type hints for component configuration
+- Customize styles using externalClasses
+- Handle component events correctly
+
+## Performance Optimization
+
+- Use subpackages for code splitting
+- Optimize images: use appropriate format and size
+- Lazy load images and components
+- Use appropriate caching strategies
+- Reduce unnecessary setData calls
+
+## Error Handling
+
+- Global error handling: app.onError, app.onPageNotFound
+- Unified network error handling
+- Business logic error handling
+- User-friendly error messages
+
+## Testing
+
+- Unit tests for utility functions and business logic
+- Component testing methods
+- Integration tests for page flows
