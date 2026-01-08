@@ -5,7 +5,7 @@ globs:
   - "**/*.wxml"
   - "**/*.wxss"
   - "**/*.json"
-alwaysApply: false
+alwaysApply: true
 ---
 
 # WeChat Mini Program Rules
